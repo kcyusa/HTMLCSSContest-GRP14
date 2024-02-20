@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    padding: 0;
+    background:radial-gradient(circle, #000000, #000000c7);
+    overflow-x: hidden;
+    
+}
+
+.glass-container {
+    background: rgba(150, 134, 134, 0.3); 
+    border-radius: 20px;
+    backdrop-filter: blur(1px);
+    padding: 40px;
+    margin: 0% 3%;
+    height: 100%;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); 
+    min-height: 100vh;
+}
+nav{
+    background-color: black;
+    height: fit-content;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+
+}
+nav ul {
+    display: inline-flex;
+    flex-direction: row;
+}
+nav ul li{
+    margin-right: 3%;
+    margin-left: 4%;
+    list-style: none;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+}
+
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+
+}
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+    gap: 10px;
+}
+.min-container{
+    background: #000;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 12px;
+    border-radius: 15px;
+}
+.image-container{
+    height: 400px;
+    width: 90%;
+    background-size: cover; 
+    background-position: center; 
+    display: inline-flex;
+    flex-direction: column;
+    border-radius: 32px;
+}
+.side-info{
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  align-items: start;
+}
+.span-1{
+    color: rgb(168, 6, 6);
+    width: max-content;
+    height: max-content;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 6px;
+    background-color: #000;
+    border-radius: 8px;
+}
+.span-2{
+    color: rgb(4, 134, 0);
+    width: max-content;
+    height: max-content;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 6px;
+    background-color: #000;
+    border-radius: 8px;
+}
+.grass-2{
+    display: inline-flex;
+    background: rgba(22, 8, 8, 0.4); 
+    border-radius: 20px;
+    backdrop-filter: blur(2px);
+    padding: 40px;
+    margin-right: 12px;
+    margin-left:12px ;
+    margin-top: 182px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); 
+}
+@media screen and (max-width: 500px) {
+    .main-container {
+        grid-template-columns: repeat(auto-fill, minmax(75%, 1fr));
+    }
+    .span-1{
+        padding:1px;
+    }
+    nav{
+        background-color: black;
+        height: fit-content;
+        width: 340px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        display: inline-flex;
+        justify-content:flex-start ;
+        border-radius: 30px;
+    }
+    nav ul{
+        display: inline-flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: flex-start;
+    }
+    nav ul li{
+        gap: 2px;
+        list-style: none;
+    }
+    .glass-container{
+        background: rgba(143, 110, 110, 0.4); 
+        border-radius: 20px;
+        backdrop-filter: blur(2px);
+        padding: 10px;
+        height: 100%;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); 
+        min-height: 100vh;
+    }
+
+}
+p{
+    color: white;
+    font-size: 18px;
+    align-self: center;
+}
+#cars{
+    background-image: url('../images/cars.jpg');
+}
+#python{
+    background-image: url('../images/python.jpg');
+}
+#business{
+    background-image: url('../images/bussiness.jpg');
+}
+#fifa{
+    background-image: url('../images/fifa.jpg');
+}
+#karaoke{
+    background-image: url('../images/karaoke.jpg');
+}
+#pm{
+    background-image: url('../images/pm.jpg');
+}
