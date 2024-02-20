@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background:radial-gradient(circle, #000000, #000000c7);
+    background:radial-gradient(circle, #000000, #2e1e01c7);
     overflow-x: hidden;
     
 }
@@ -39,13 +39,18 @@ nav ul li{
 nav ul li a{
     color: white;
     text-decoration: none;
-    font-family: monospace;
+    font-family: 'Courier New', Courier, monospace;
     font-size: medium;
 }
 
-
 section {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
 }
 
 footer {
@@ -55,12 +60,17 @@ footer {
 
 }
 .main-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
-    gap: 10px;
+    width: 100%;
+    height: fit-content;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 52px;
 }
 .min-container{
     background: #000;
+    width: 26%;
+    height: 656px;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
@@ -70,15 +80,16 @@ footer {
 .image-container{
     height: 400px;
     width: 90%;
-    background-size: cover; 
+    background-size: contain; 
     background-position: center; 
+    background-repeat: no-repeat;
     display: inline-flex;
     flex-direction: column;
-    border-radius: 32px;
+    border-radius: 120px;
 }
 .side-info{
   color: white;
-  font-family: monospace;
+  font-family: 'Courier New', Courier, monospace;
   display: inline-flex;
   flex-direction: column;
   gap: 12px;
@@ -96,7 +107,7 @@ footer {
     border-radius: 8px;
 }
 .span-2{
-    color: rgb(4, 134, 0);
+    color: rgb(7, 20, 202);
     width: max-content;
     height: max-content;
     font-family: monospace;
@@ -106,18 +117,20 @@ footer {
 }
 .grass-2{
     display: inline-flex;
+    flex-direction: column;
     background: rgba(22, 8, 8, 0.4); 
     border-radius: 20px;
     backdrop-filter: blur(2px);
     padding: 40px;
-    margin-right: 12px;
-    margin-left:12px ;
-    margin-top: 182px;
+    margin-top: 13px;
+    width: 80%;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); 
 }
 @media screen and (max-width: 500px) {
     .main-container {
+        display: grid;
         grid-template-columns: repeat(auto-fill, minmax(75%, 1fr));
+        gap: 20px;
     }
     .span-1{
         padding:1px;
@@ -151,28 +164,30 @@ footer {
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); 
         min-height: 100vh;
     }
+    section {
+        display: inline-flex;
+        align-items: center;
+        width: 90%;
+        min-height: 100vh;
+        height: 100%;
+    }
 
 }
 p{
-    color: white;
+    color: whitesmoke;
     font-size: 18px;
-    align-self: center;
+    text-align: justify;
+    line-height: 32px;
 }
-#cars{
-    background-image: url('../images/cars.jpg');
+#keny{
+    background-image: url('../images/keny.jpg');
 }
-#python{
-    background-image: url('../images/python.jpg');
+#jp{
+    background-image: url('../images/jp.jpeg');
 }
-#business{
-    background-image: url('../images/bussiness.jpg');
-}
-#fifa{
-    background-image: url('../images/fifa.jpg');
-}
-#karaoke{
-    background-image: url('../images/karaoke.jpg');
-}
-#pm{
-    background-image: url('../images/pm.jpg');
+.email{
+    font-size: 21px;
+    font-family: monospace;
+    font-weight: bold;
+    color: grey;
 }
