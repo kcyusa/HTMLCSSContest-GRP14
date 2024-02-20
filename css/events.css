@@ -16,7 +16,7 @@ body {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); 
     min-height: 100vh;
 }
-nav{
+/* nav{
     background-color: black;
     height: fit-content;
     padding-top: 8px;
@@ -41,8 +41,68 @@ nav ul li a{
     text-decoration: none;
     font-family: monospace;
     font-size: medium;
+} */
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 2em;
+    text-align: center;
 }
 
+header h1 {
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    
+    
+}
+
+header h1 {
+    margin-top: 80px;
+}
+
+
+header nav ul {
+    list-style: none;
+    /* padding: 0; */
+    text-decoration: none;
+}
+
+header nav ul li {
+    display: inline;
+    justify-content: space-between;
+    margin: 0 1em;
+    text-decoration: none;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+header nav ul li a:hover {
+    color: #0AB84C;
+}
+
+header nav ul li a:active {
+    color: #0AB84C;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
 
 section {
     padding: 20px;
@@ -115,6 +175,20 @@ footer {
     margin-top: 182px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); 
 }
+
+article {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #45a1ff;
+    color: #fff;
+  }
 @media screen and (max-width: 500px) {
     .main-container {
         grid-template-columns: repeat(auto-fill, minmax(75%, 1fr));
@@ -159,20 +233,20 @@ p{
     align-self: center;
 }
 #cars{
-    background-image: url('../images/cars.jpg');
+    background-image: url('../html/images/cars.jpg');
 }
 #python{
-    background-image: url('../images/python.jpg');
+    background-image: url('../html/images/python.jpg');
 }
 #business{
-    background-image: url('../images/bussiness.jpg');
+    background-image: url('../html/images/bussiness.jpg');
 }
 #fifa{
-    background-image: url('../images/fifa.jpg');
+    background-image: url('../html/images/fifa.jpg');
 }
 #karaoke{
-    background-image: url('../images/karaoke.jpg');
+    background-image: url('../html/images/karaoke.jpg');
 }
 #pm{
-    background-image: url('../images/pm.jpg');
+    background-image: url('../html/images/pm.jpg');
 }

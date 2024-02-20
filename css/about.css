@@ -15,7 +15,7 @@ body {
     height: 100%;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); 
     min-height: 100vh;
-}
+/* }
 nav{
     background-color: black;
     height: fit-content;
@@ -41,7 +41,7 @@ nav ul li a{
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
     font-size: medium;
-}
+} */
 
 section {
     display: inline-flex;
@@ -126,6 +126,76 @@ footer {
     width: 80%;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); 
 }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #45a1ff;
+    color: #fff;
+  }
+
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 2em;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    
+    
+}
+
+header h1 {
+    margin-top: 80px;
+}
+
+
+header nav ul {
+    list-style: none;
+    /* padding: 0; */
+    text-decoration: none;
+}
+
+header nav ul li {
+    display: inline;
+    justify-content: space-between;
+    margin: 0 1em;
+    text-decoration: none;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+header nav ul li a:hover {
+    color: #0AB84C;
+}
+
+header nav ul li a:active {
+    color: #0AB84C;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
 @media screen and (max-width: 500px) {
     .main-container {
         display: grid;
@@ -180,14 +250,15 @@ p{
     line-height: 32px;
 }
 #keny{
-    background-image: url('../images/keny.jpg');
+    background-image: url('../html/images/keny.jpg');
 }
 #jp{
-    background-image: url('../images/jp.jpeg');
+    background-image: url('../html/images/jp.jpeg');
 }
 .email{
     font-size: 21px;
     font-family: monospace;
     font-weight: bold;
     color: grey;
+}
 }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/contact-us.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="./images/Alu_logo.png" alt="alu-logo">
+            <ul>
+                <li><a href="../html/home.html">Home</a></li>
+                <li><a href="../html/events.html">Events</a></li>
+                <li><a href="../html/about.html">About</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome to Alumni Connect</h1>
+        <p>Your gateway to future opportunities and cherished memories</p>
+    </header>
+    <div class="contact-form-container">
+   
+        <form action="/submit" method="post">
+            <h2>Event Reservation Form</h2>
+            <label>
+                <input type="radio" name="category" value="campus" required> Campus Events
+                <div class="event-options">
+                    <label for="campus-event">Choose Campus Event:</label>
+                    <select id="campus-event" name="campus-event" required>
+                        <option value="">-- Select Event --</option>
+                        <option value="Campus Event 1">Cars 3 Cinema</option>
+                        <option value="Campus Event 2">FIFA 19 Competitions</option>
+                        <option value="Campus Event 2">Karaoke Night</option>
+                    </select>
+                    <div class="reservation-details">
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" required>
+        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+            </label>
+        
+            <label>
+                <input type="radio" name="category" value="professional" required> Professional Development Events
+                <div class="event-options">
+                    <label for="professional-event">Choose Professional Event:</label>
+                    <select id="professional-event" name="professional-event" required>
+                        <option value="">-- Select Event --</option>
+                        <option value="Professional Event 1">Study Python</option>
+                        <option value="Professional Event 2">Event: Bussiness Management Course</option>
+                        <option value="Professional Event 2">Project Management</option>
+                    </select>
+                    <div class="reservation-details">
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" required>
+        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+            </label>
+        
+            <input type="submit" value="Reserve Slot">
+        </form>        
+      </div>
+        <footer>
+          <p>© 2018 AlumniConnect</p>
+        </footer>
+</body>
+</html>

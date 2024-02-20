@@ -1,0 +1,141 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+
+/* Path: header.css */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 2em;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    
+    
+}
+
+header h1 {
+    margin-top: 80px;
+}
+
+
+header nav ul {
+    list-style: none;
+    /* padding: 0; */
+    text-decoration: none;
+}
+
+header nav ul li {
+    display: inline;
+    justify-content: space-between;
+    margin: 0 1em;
+    text-decoration: none;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+header nav ul li a:hover {
+    color: #0AB84C;
+}
+
+header nav ul li a:active {
+    color: #0AB84C;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+section {
+    padding: 2em;
+}
+
+section h2 {
+    text-align: center;
+}
+
+.missions {
+    display: grid;
+    grid-template-columns: repeat(3,400px);
+    margin-left: auto;
+    margin-right: auto;
+    gap: 30px;
+    font-family: serif;
+}
+
+.mission1 {
+    background-image: url('../html/images/cropped-asa-mission-page-1-1536x922.jpg');
+    height: 200px;
+    background-size: cover;
+}
+
+.mission2 {
+    background-image: url('../html/images/Professional-Development.jpg');
+    height: 200px;
+    background-size: cover;
+}
+
+.mission3 {
+    background-image: url('../html/images/Lehman-LIFE-Students-Experience-Community-Building-in-Africa.jpg');
+    height: 200px;
+    background-size: cover;
+}
+
+.missions p {
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+}
+
+
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #45a1ff;
+    color: #fff;
+  }
+
+@media screen and (max-width: 500px) {
+    .missions {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(75%, 1fr));
+        gap: 20px;
+    }
+
+    header nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 8px;
+    }
+
+    header nav ul li {
+        display: inline;
+        justify-content: center;
+        margin: 0;
+        text-decoration: none;
+    }
+}
