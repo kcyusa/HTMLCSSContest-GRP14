@@ -2,3 +2,4 @@ This is a website that serves as a dedicated hub for university alumni, designed
 
 contributer: - Kenny CYUSA
              - Jean Pierre NIYONGABO
+             - Bridget Chimdinma Ogbuagu
